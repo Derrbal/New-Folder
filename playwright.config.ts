@@ -14,7 +14,7 @@ export default defineConfig({
   use: {
     actionTimeout: 0,
     userAgent: 'some custom ua',
-    viewport: { width: 100, height: 100 },
+    viewport: { width: 1920, height: 1080 },
     trace: 'on',
     screenshot: 'on',
     video: 'on',
@@ -25,11 +25,11 @@ export default defineConfig({
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        viewport: {
-          width: 100,
-          height: 100
-        },
+        viewport:  { width: 1920, height: 1080 },
         userAgent: 'some custom ua',
+        trace: 'on',
+        screenshot: 'on',
+        video: 'on',
       },
     },
   ],
